@@ -2,13 +2,14 @@
 
 namespace seregazhuk\PhpWatcher;
 
+use Jean85\PrettyVersions;
 use Symfony\Component\Console\Application;
 
 final class ConsoleApplication extends Application
 {
     public function __construct()
     {
-        parent::__construct('PHP-Watcher', '0.4.2');
+        parent::__construct('PHP-Watcher', PrettyVersions::getVersion('seregazhuk/php-watcher')->getPrettyVersion());
         $this->add(new WatcherCommand());
     }
 

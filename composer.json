@@ -31,7 +31,8 @@
         "symfony/yaml": "^4.3",
         "react/child-process": "^0.6.1",
         "ext-json": "*",
-        "ext-pcntl": "*"
+        "ext-pcntl": "*",
+        "jean85/pretty-package-versions": "^1.2"
     },
     "autoload": {
         "psr-4": {
